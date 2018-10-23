@@ -1,0 +1,107 @@
+
+
+29/08/2017
+Geoffroy
+
+Ajout du bouton Like pour WWF et Amélioration de la responsivité
+
+svn up wp-content/themes/bst-master/css/style.css
+svn up wp-content/themes/bst-master/css/responsive.css
+svn up wp-content/themes/bst-master/functions/widgets.php
+svn up wp-content/themes/bst-master/functions/enqueues.php
+svn up wp-content/themes/bst-master/page-templates/rse-politic.php
+svn up wp-content/themes/bst-master/widgets/RSE/class-widget-rse-section-one-bloc-content.php
+svn up wp-content/themes/bst-master/includes/footer.php
+svn up wp-content/themes/bst-master/includes/header.php
+svn up wp-content/themes/bst-master/images/rse/arrow.png
+svn up wp-content/themes/bst-master/images/rse/coeur-rouge.png
+svn up wp-content/themes/bst-master/images/rse/coeur-gris.png
+svn up wp-content/themes/bst-master/js/plugins/js-cookie-master
+
+Ajout du Google Transfert
+
+svn up wp-content/themes/bst-master/includes/header.php
+
+#####
+
+25/09/2017
+Geoffroy
+
+Modifications demandées par Mourad par le mail du 15/09/2017
+
+svn up wp-content/themes/bst-master/css/style.css
+svn up wp-content/themes/bst-master/includes/loops/content.php
+svn up wp-content/themes/bst-master/includes/loops/content-single.php
+svn up wp-content/themes/bst-master/page-templates/home.php
+
+
+
+
+#####
+
+25/09/2017
+Geoffroy
+
+Modifications demandées par Henri par le mail du 20/09/2017
+
+svn up wp-content/themes/bst-master/includes/footer.php
+
+
+#####
+
+26/09/2017
+Geoffroy
+
+Ajout du formulaire Autre service
+
+
+svn up wp-content/themes/bst-master/includes/footer.php
+svn up wp-content/themes/bst-master/includes/loops/content-single.php
+svn up wp-content/themes/bst-master/page-templates/about-us.php
+svn up wp-content/themes/bst-master/css/style.css
+svn up wp-content/themes/bst-master/images/form-other-services
+svn up wp-content/themes/bst-master/other-services.php
+
+
+#####
+
+02/10/2017
+Geoffroy
+
+Modification de widget demandée par Mourad le 28/09/2017
+
+Ajout de la possibilité de modifier le libéllé du bouton (en savoir+)
+
+svn up wp-content/themes/bst-master/widgets/home/class-widget-home-section-two.php
+
+
+Modification de formulaire demandée par Mourad le 28/09/2017
+Ajout du formulaire d'estimation dans la page Décrouvrez notre offre
+
+svn up wp-content/themes/bst-master/page-templates/offer.php
+svn up wp-content/themes/bst-master/includes/footer.php
+
+
+####
+
+28/03/2018
+Geoffroy
+
+Modification du menu haut et du slider et remplacement du system de cookie notification (home made)
+
+svn up wp-content/themes/bst-master/includes/header.php
+svn up wp-content/themes/bst-master/css/responsive.css
+svn up wp-content/themes/bst-master/css/style.css
+svn up wp-content/themes/bst-master/includes/footer.php
+svn up wp-content/themes/bst-master/widgets/home/class-widget-home-slider.php
+
+
+###
+
+16/07/2018
+Geoffroy
+
+svn up wp-content/themes/bst-master/page-templates/home.php
+svn up wp-content/themes/bst-master/css/style.css
+svn up wp-content/themes/bst-master/css/responsive.css
+svn up wp-content/themes/bst-master/contact.php

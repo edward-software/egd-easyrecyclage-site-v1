@@ -1,0 +1,12 @@
+
+section.section-quotation .block-form-date-call-quotation .date-call-quotation .input-group.date-day {
+    padding-top: 0px;
+}
+section.section-quotation .block-form-date-call-quotation button.btn-call-quotation {
+    margin-top: 0px;
+    margin-bottom: 23px;
+}
+
+.carousel-indicators li {
+	line-height: 23px !important;
+}

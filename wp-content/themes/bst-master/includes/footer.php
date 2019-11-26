@@ -64,8 +64,8 @@ if(is_array($menus) && count($menus)) {
         <h5>Suivez-nous</h5>
         <ul>
           <li><a href="https://www.paprec.com/fr" target="_blank"><img src="<?php bloginfo("template_directory"); ?>/images/footer/picto-social/paprec-site.png"></a></li>
+          <li><a href="https://easyrecyclage.paprec.com/" target="_blank"><img src="<?php bloginfo("template_directory"); ?>/images/footer/picto-social/paprec-site.png"></a></li>
           <li><a href="https://fr.linkedin.com/company/paprec" target="_blank"><img src="<?php bloginfo("template_directory"); ?>/images/footer/picto-social/paprec-linkedIn.png"></a></li>
-          <li><a href="https://plus.google.com/+paprec/posts" target="_blank"><img src="<?php bloginfo("template_directory"); ?>/images/footer/picto-social/paprec-google-plus.png"></a></li>
           <li><a href="https://www.youtube.com/user/paprecgroup" target="_blank"><img src="<?php bloginfo("template_directory"); ?>/images/footer/picto-social/paprec-youtube.png"></a></li>
           <li><a href="https://fr.pinterest.com/paprecgroup/" target="_blank"><img src="<?php bloginfo("template_directory"); ?>/images/footer/picto-social/paprec-pinterest.png"></a></li>
           <li><a href="https://twitter.com/Paprec_Group" target="_blank"><img src="<?php bloginfo("template_directory"); ?>/images/footer/picto-social/paprec-twitter.png"></a></li>
@@ -78,7 +78,7 @@ if(is_array($menus) && count($menus)) {
         </ul>
       </div>
       <div class="col-md-2 col-xs-12 footer-block-contact">
-        <p>&copy; 2016 - Paprec Group</p>
+        <p>&copy; 2019 - Paprec Group</p>
         <a href="<?php bloginfo("home"); ?>/mentions-legales/">Mentions légales</a><br>
         <a href="mailto:easyrecyclage@paprec.com">Contactez-nous</a>
       </div>

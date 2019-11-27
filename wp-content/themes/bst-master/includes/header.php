@@ -221,11 +221,13 @@
             <img src="<?php bloginfo("template_directory"); ?>/images/logo/logo-paprec-group.png">
           </a>
         </li>
+
         <li class="menu-item-type-link-paprec-web-site">
-          <a href="https://easyrecyclage.paprec.com/" target="_blank">
-            <img src="<?php bloginfo("template_directory"); ?>/images/logo/logo-easyrecyclage.png">
+          <a href="https://easyrecyclage.paprec.com" target="_blank">
+            <img src="https://www.easyrecyclage.com/wp-content/uploads/2019/11/logo-easyrecyclage.png">
           </a>
         </li>
+
         <li id="btn-collaborateur" class="btn-collaborateur">
           <a href="<?php echo EASY_RECYCLAGE_STORE_URL; ?>/souscription/connexion" type="button"
              class="modal-button-login btn-collaborateur">Accès Partenaire</a>

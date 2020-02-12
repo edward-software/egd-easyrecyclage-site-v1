@@ -2766,6 +2766,13 @@ section.blog-section-content {
     background-color: #b4b4b4;
 }
 
+.page-form-other-services-result .btn-gustave {
+    background-color: #1ab3b1;
+    white-space: normal;
+    font-size: 13px;
+    padding-top: 6px;
+}
+
 .page-form-other-services-result .btn-blog {
     background-color: #3c4693;
 }

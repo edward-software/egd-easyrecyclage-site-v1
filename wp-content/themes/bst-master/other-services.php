@@ -372,7 +372,7 @@ if (isset($_GET['serviceId'])) {
                         '      </div>\n' +
                         '      <div class="row">\n' +
                         '        <div class="col-sm-4 text-center"><img src="/wp-content/themes/bst-master/images/form-other-services/form-result-box.png" class="img-responsive hidden-xs"><a href="/decouvrez-notre-offre/" class="btn btn-default btn-offer">Notre offre</a></div>\n' +
-                        '        <div class="col-sm-4 text-center"><img src="/wp-content/themes/bst-master/images/form-other-services/form-result-wwf.png" class="img-responsive hidden-xs"><a href="/soutenez-wwf/" class="btn btn-default btn-wwf">WWF & Paprec</a></div>\n' +
+                        '        <div class="col-sm-4 text-center"><img src="/wp-content/themes/bst-master/images/form-other-services/form-result-gustave.png" class="img-responsive hidden-xs"><a href="/soutenez-lutte-contre-cancer-enfant/" class="btn btn-default btn-gustave">Lutte contre le cancer</a></div>\n' +
                         '        <div class="col-sm-4 text-center"><img src="/wp-content/themes/bst-master/images/form-other-services/form-result-city.png" class="img-responsive hidden-xs"><a href="/blog/" class="btn btn-default btn-blog">Le blog</a></div>\n' +
                         '      </div>\n' +
                         '    </div>',

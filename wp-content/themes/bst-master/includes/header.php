@@ -221,10 +221,10 @@
             <img src="<?php bloginfo("template_directory"); ?>/images/logo/logo-paprec-group.png">
           </a>
         </li>
-
-        <li class="menu-item-type-link-paprec-web-site">
-          <a href="https://easyrecyclage.paprec.com" target="_blank">
-            <img src="https://www.easyrecyclage.com/wp-content/uploads/2019/11/logo-easyrecyclage.png">
+	
+	<li class="menu-item-type-link-paprec-web-site">
+          <a href="https://mypaprecsolutions.com" target="_blank">
+            <img src="https://www.easyrecyclage.com/wp-content/uploads/2020/03/My-Paprec-Solutions-logo.png">
           </a>
         </li>
 

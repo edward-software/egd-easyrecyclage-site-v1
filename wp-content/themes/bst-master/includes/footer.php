@@ -136,13 +136,13 @@
         <?php if(is_front_page() || is_page('offre')) { ?>
 
 
-        $('.egd-cookie-accept').on('click', function(){
-            $('.egd-cookie-notification').hide();
-            Cookies.set('egd-cookie-notification', true);
-        });
-        if(! Cookies.get('egd-cookie-notification')) {
-            $('.egd-cookie-notification').show();
-        }
+        // $('.egd-cookie-accept').on('click', function(){
+        //     $('.egd-cookie-notification').hide();
+        //     Cookies.set('egd-cookie-notification', true);
+        // });
+        // if(! Cookies.get('egd-cookie-notification')) {
+        //     $('.egd-cookie-notification').show();
+        // }
 
         $('#formSubscription').on('submit', function() {
             if($('#form_postalCode').val() != '' && $('#selectSizeRange').val() != '' && $('#selectSizeRange').val() != 'max') {

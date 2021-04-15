@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="d51d1f2f-ff47-4104-a4dd-bc5a3e2a2cc6" data-blockingmode="auto" type="text/javascript"></script>
 
   <!-- Open Graph tags (FB sharing!) -->
     <?php if (is_single() && get_the_post_thumbnail()) {
@@ -58,6 +59,7 @@
 
 </head>
 <body <?php //body_class(); ?> onload="_googWcmGet(callbackNumber, '01 41 69 70 00')">
+
 <!-- Google Tag Manager -->
 <noscript>
   <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KMPN3F"
@@ -88,15 +90,15 @@
 <![endif]-->
 
 <nav id="topMenu" class="navbar navbar-inverse navbar-fixed-top">
-  <div class="egd-cookie-notification">
-    <div class="container">
-      <div class="text">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour vous proposer des publicités ciblées adaptées à vos centres d'intérêts et/ou, réaliser des statistiques et mesurer l'audience de notre site.</div>
-      <div class="buttons">
-        <a href="javascript:void(0);" class="egd-cookie-accept">J'ai compris</a>
-        <a href="https://www.easyrecyclage.com/mentions-legales/" target="_blank" class="egd-cookie-more-info">En savoir plus</a>
-      </div>
-    </div>
-  </div>
+<!--  <div class="egd-cookie-notification">-->
+<!--    <div class="container">-->
+<!--      <div class="text">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour vous proposer des publicités ciblées adaptées à vos centres d'intérêts et/ou, réaliser des statistiques et mesurer l'audience de notre site.</div>-->
+<!--      <div class="buttons">-->
+<!--        <a href="javascript:void(0);" class="egd-cookie-accept">J'ai compris</a>-->
+<!--        <a href="https://www.easyrecyclage.com/mentions-legales/" target="_blank" class="egd-cookie-more-info">En savoir plus</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -248,7 +250,6 @@
   </div>
   <!-- /.container -->
 </nav>
-
 
 <?php //bst_slider_template(); ?>
 

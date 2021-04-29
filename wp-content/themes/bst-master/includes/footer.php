@@ -77,7 +77,7 @@
         </ul>
       </div>
       <div class="col-md-2 col-xs-12 footer-block-contact">
-        <p>&copy; 2019 - Paprec Group</p>
+        <p>&copy; <?php echo date('Y'); ?> - Paprec Group</p>
         <a href="<?php bloginfo("home"); ?>/mentions-legales/">Mentions légales</a><br>
         <a href="mailto:easyrecyclage@paprec.com">Contactez-nous</a>
       </div>
@@ -136,13 +136,13 @@
         <?php if(is_front_page() || is_page('offre')) { ?>
 
 
-        // $('.egd-cookie-accept').on('click', function(){
-        //     $('.egd-cookie-notification').hide();
-        //     Cookies.set('egd-cookie-notification', true);
-        // });
-        // if(! Cookies.get('egd-cookie-notification')) {
-        //     $('.egd-cookie-notification').show();
-        // }
+        $('.egd-cookie-accept').on('click', function(){
+            $('.egd-cookie-notification').hide();
+            Cookies.set('egd-cookie-notification', true);
+        });
+        if(! Cookies.get('egd-cookie-notification')) {
+            $('.egd-cookie-notification').show();
+        }
 
         $('#formSubscription').on('submit', function() {
             if($('#form_postalCode').val() != '' && $('#selectSizeRange').val() != '' && $('#selectSizeRange').val() != 'max') {

@@ -41,6 +41,119 @@
     </div><!-- /.container -->
 </section><!-- /.section-header-page -->
 
+<section id="services" class="about-section-services">
+
+    <div class="container">
+    <div class="row">
+            <?php if(  !function_exists( 'dynamic_sidebar' ) || dynamic_sidebar('about_widget_decouvrerNosServices_titreCenter') ): ?>
+
+            <?php else : ?>
+        <div class="col-xs-12">
+            <div class="block-title">
+                <h3>Découvrez nos autres services</h3>
+                <hr>
+            </div><!-- /.block-header -->
+
+        </div><!-- /.col-xs-12 -->
+
+            <?php endif; ?>
+    </div><!-- /.row -->
+
+<?php
+        $serviceListUrl = EASY_RECYCLAGE_STORE_URL."/subscription/serviceList";
+        $services = file_get_contents($serviceListUrl);
+        $services = json_decode($services, TRUE);
+
+        if(is_array($services['services']) && count($services['services']))
+        {
+    ?>
+
+    <div class="row">
+    <?php
+            $i = 0;
+            foreach($services['services'] as $service)
+            {
+    ?>
+
+                <div id="link_box_<?php echo $service['id']; ?>" class="col-lg-2 col-md-3 col-xs-6 link_box <?php if($i == 0){ ?> active<?php } ?>">
+
+                  <?php if( $service['url'] != null ) {  ?>
+                    <a style="color:<?php echo $service['color']; ?>;" href="<?php echo $service['url']; ?>" target="_blank">
+                  <?php } else { ?>
+                    <a href="#modal_service_<?php echo $service['id']; ?>" class="modal-service-action" style="color:<?php echo $service['color']; ?>;">
+
+                            <?php  } ?>
+                        <div class="container-img">
+                            <img class="featurette-image img-responsive center-block"
+                                 src="<?php echo $service['picto1']; ?>">
+                        </div>
+                        <h5 class="text-center" style="color:<?php echo $service['color']; ?>;"><?php echo $service['name']; ?></h5>
+                    </a>
+
+
+                </div><!-- /.col-md-2 -->
+
+                <div id="modal_service_<?php echo $service['id']; ?>" class="modal-service">
+                    <div class="row-fluid">
+
+                        <?php if ( $service['picture'] != null ) {  ?>
+
+                        <div class="col-md-4 col-md-offset-1 text-center">
+                            <img class="img-responsive img-portfolio img-hover service-img"
+                                 src="<?php echo $service['picture']; ?>"
+                                 alt="">
+                        </div>
+
+                        <?php  }; ?>
+
+                        <div class="<?php if ( $service['picture'] != null ) {  ?>col-md-6 col-md-offset-1<?php } else { ?>col-md-12<?php } ?>">
+                            <!--h6 class="service-name" style="color:<?php echo $service['color']; ?>;"><?php echo $service['name']; ?></h6-->
+                            <div class="service-description"><?php echo $service['description']; ?></div>
+
+                          <a href="<?php bloginfo("template_directory"); ?>/other-services.php?serviceId=<?php echo $service['id']; ?>" type="button"
+                             class="btn btn-default other-services-button modal-other-services-button"
+                             data-fancybox-type="iframe">
+                            En savoir +
+                          </a>
+                        </div>
+                    </div>
+                </div><!-- /.col-md-2 -->
+
+    <?php
+                $i++;
+            }
+    ?>
+    </div>
+    <?php
+        }
+    ?>
+
+    </div><!-- /.container -->
+</section>
+
+<section class="about-section-two bg-color-block-container-purple">
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <?php if(  !function_exists( 'dynamic_sidebar' ) || dynamic_sidebar('about_widget_recyclerAvecLaCorbeilleBleue_titreLeft') ): ?>
+
+            <?php else : ?>
+                <div class="col-md-8 col-xs-12">
+                    <div class="block-title">
+                        <h3 class="text-uppercase text-left">et si vous recycliez aussi avec la corbeille bleue ?</h3>
+                    </div><!-- /.block-title -->
+                </div><!-- /.col-md-8 -->
+            <?php endif; ?>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="block-action-subscription">
+                        <a class="btn btn-default pull-right text-center" href="<?php echo EASY_RECYCLAGE_STORE_URL; ?>">estimez votre besoin</a>
+                    </div><!-- /.block-action-subscription -->
+                </div><!-- /.col-md-8 -->
+
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.about-section-one -->
 
 <section id="corbeille-bleue" class="about-section-one">
     <!-- Page Content -->
@@ -122,120 +235,6 @@
     </div><!-- /.container -->
 </section><!-- /.about-section-one -->
 
-<section class="about-section-two bg-color-block-container-purple">
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <?php if(  !function_exists( 'dynamic_sidebar' ) || dynamic_sidebar('about_widget_recyclerAvecLaCorbeilleBleue_titreLeft') ): ?>
-
-            <?php else : ?>
-                <div class="col-md-8 col-xs-12">
-                    <div class="block-title">
-                        <h3 class="text-uppercase text-left">et si vous recycliez aussi avec la corbeille bleue ?</h3>
-                    </div><!-- /.block-title -->
-                </div><!-- /.col-md-8 -->
-            <?php endif; ?>
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="block-action-subscription">
-                        <a class="btn btn-default pull-right text-center" href="<?php echo EASY_RECYCLAGE_STORE_URL; ?>">estimez votre besoin</a>
-                    </div><!-- /.block-action-subscription -->
-                </div><!-- /.col-md-8 -->
-
-        </div><!-- /.row -->
-    </div><!-- /.container -->
-</section><!-- /.about-section-one -->
-
-<section id="services" class="about-section-services">
-
-    <div class="container">
-    <div class="row">
-            <?php if(  !function_exists( 'dynamic_sidebar' ) || dynamic_sidebar('about_widget_decouvrerNosServices_titreCenter') ): ?>
-
-            <?php else : ?>
-        <div class="col-xs-12">
-            <div class="block-title">
-                <h3>Découvrez nos autres services</h3>
-                <hr>
-            </div><!-- /.block-header -->
-
-        </div><!-- /.col-xs-12 -->
-
-            <?php endif; ?>
-    </div><!-- /.row -->
-
-<?php
-        $serviceListUrl = EASY_RECYCLAGE_STORE_URL."/subscription/serviceList";
-        $services = file_get_contents($serviceListUrl);
-        $services = json_decode($services, TRUE);
-
-        if(is_array($services['services']) && count($services['services']))
-        {                
-    ?>
-
-    <div class="row">
-    <?php
-            $i = 0;
-            foreach($services['services'] as $service) 
-            {
-    ?>
-
-                <div id="link_box_<?php echo $service['id']; ?>" class="col-lg-2 col-md-3 col-xs-6 link_box <?php if($i == 0){ ?> active<?php } ?>">
-
-                    <a href="#modal_service_<?php echo $service['id']; ?>" class="modal-service-action" style="color:<?php echo $service['color']; ?>;">
-                        <div class="container-img">
-                            <img class="featurette-image img-responsive center-block"
-                                 src="<?php echo $service['picto1']; ?>">
-                        </div>
-                        <h5 class="text-center" style="color:<?php echo $service['color']; ?>;"><?php echo $service['name']; ?></h5>
-                    </a>
-
-
-                </div><!-- /.col-md-2 -->
-
-                <div id="modal_service_<?php echo $service['id']; ?>" class="modal-service">
-                    <div class="row-fluid">
-
-                        <?php if ( $service['picture'] != null ) {  ?>
-
-                        <div class="col-md-4 col-md-offset-1 text-center">
-                            <img class="img-responsive img-portfolio img-hover service-img"
-                                 src="<?php echo $service['picture']; ?>"
-                                 alt="">
-                        </div>
-
-                        <?php  }; ?>
-
-                        <div class="<?php if ( $service['picture'] != null ) {  ?>col-md-6 col-md-offset-1<?php } else { ?>col-md-12<?php } ?>">
-                            <!--h6 class="service-name" style="color:<?php echo $service['color']; ?>;"><?php echo $service['name']; ?></h6-->
-                            <div class="service-description"><?php echo $service['description']; ?></div>
-
-                            <?php /*if( $service['url'] != null ) {  ?>
-                                <a class="btn" href="<?php echo $service['url']; ?>" target="_blank">En savoir +</a>
-
-                            <?php  };*/ ?>
-
-                          <a href="<?php bloginfo("template_directory"); ?>/other-services.php?serviceId=<?php echo $service['id']; ?>" type="button"
-                             class="btn btn-default other-services-button modal-other-services-button"
-                             data-fancybox-type="iframe">
-                            En savoir +
-                          </a>
-                        </div>
-                    </div>
-                </div><!-- /.col-md-2 -->
-
-    <?php
-                $i++;
-            }
-    ?>
-    </div>
-    <?php
-        }
-    ?>
-
-    </div><!-- /.container -->
-</section>
-
 <section class="about-section-three">
     <!-- Page Content -->
     <div class="container">
@@ -300,7 +299,7 @@
     <div class="container rel-1">
         <div class="row">
             <?php if(  !function_exists( 'dynamic_sidebar' ) || dynamic_sidebar('about_widget_section_video') ): ?>
-                
+
             <?php else : ?>
                     <div class="col-md-12 block-content-container">
                       <a class="fancybox-media center-block" href="https://www.youtube.com/watch?v=sIDFeRuYxi4"><img src="<?php bloginfo("template_directory"); ?>/images/picto-play.png"></i></a>

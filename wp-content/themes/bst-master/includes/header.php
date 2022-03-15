@@ -226,7 +226,7 @@
 	
 	<li class="menu-item-type-link-paprec-web-site">
           <a href="https://mypaprecsolutions.com" target="_blank">
-            <img src="https://www.easyrecyclage.com/wp-content/uploads/2020/03/My-Paprec-Solutions-logo.png">
+            <img src="https://www.easyrecyclage.com/wp-content/uploads/2022/03/LOGO_MyPaprecSolutions_82x34_fond-transparent.png">
           </a>
         </li>
 

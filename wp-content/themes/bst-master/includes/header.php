@@ -90,15 +90,6 @@
 <![endif]-->
 
 <nav id="topMenu" class="navbar navbar-inverse navbar-fixed-top">
-  <div class="egd-cookie-notification">
-    <div class="container">
-      <div class="text">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour vous proposer des publicités ciblées adaptées à vos centres d'intérêts et/ou, réaliser des statistiques et mesurer l'audience de notre site.</div>
-      <div class="buttons">
-        <a href="javascript:void(0);" class="egd-cookie-accept">J'ai compris</a>
-        <a href="https://www.easyrecyclage.com/mentions-legales/" target="_blank" class="egd-cookie-more-info">En savoir plus</a>
-      </div>
-    </div>
-  </div>
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
